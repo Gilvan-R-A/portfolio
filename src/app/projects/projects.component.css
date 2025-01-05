@@ -1,0 +1,31 @@
+.projects-container{
+    margin: 2rem;
+
+    .project-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .project-card{
+        padding: 1rem;
+        border: 1 px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: calc(33% - 1rem);
+    }
+
+    h3{
+        margin: 0;
+    }
+
+    .links{
+        margin-top: 0;
+
+        a{
+            margin-right: 1rem;
+            text-decoration: none;
+            color: #3f51b5;
+        }
+    }
+}
