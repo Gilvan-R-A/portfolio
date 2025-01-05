@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact', 
@@ -17,6 +18,7 @@ import { MatButtonModule } from '@angular/material/button';
     ReactiveFormsModule, 
     FormsModule, 
     MatButtonModule, 
+    RouterModule,  
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
