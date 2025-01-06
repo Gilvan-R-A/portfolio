@@ -1,24 +1,109 @@
-.about-container{
-    margin: 2rem;
+.about-container {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-    .timeline{
-        list-style: none;
-        padding: 0;
+.about-container h2, .about-container h3 {
+    margin-bottom: 1rem;
+    color: #3f51b5;
+    font-weight: bold;
+}
 
-        li{
-            margin-bottom: 1rem;
-        }
+.about-container p {
+    margin-bottom: 2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    border-left: 2px solid #3f51b5;
+}
+
+.timeline li {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.timeline li::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 0.5rem;
+    width: 10px;
+    height: 10px;
+    background-color: #3f51b5;
+    border-radius: 50%;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.skills mat-icon {
+    margin-right: 0.5rem;
+    color: #3f51b5;
+    font-size: 1.5rem;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .about-container {
+        margin: 1rem;
+        padding: 1rem;
     }
 
-    .skills{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 1rem;
+    .timeline {
+        margin: 0 0 1.5rem 0;
+        border-left: none;
+    }
 
-        mat-icon{
-            margin-right: 0.5rem;
-            color: #3f51b5;
-        }
+    .timeline li {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .timeline li::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills mat-icon {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+@media (max-width: 480px){
+    .about-container {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    .skills mat-icon {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
     }
 }
