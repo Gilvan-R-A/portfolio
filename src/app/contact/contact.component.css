@@ -12,9 +12,9 @@
 
 .contact-container h2 {
     text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-    color: #3f51b5;
+    margin: 1rem 0 1.5rem 0;
+    font-size: 1.8rem;
+    color: #283593;
 }
 
 .contact-container mat-form-field {
@@ -22,11 +22,26 @@
     margin-bottom: 1rem;
 }
 
+.contact-container mat-form-field.mat-form-field-appearance-outline.mat-focused {
+    border-color: #3f51b5;
+    box-shadow: 0 0 4px rgba(63, 81, 181, 0.5);
+}
+
+.contact-container mat-form-field.mat-form-field-invalid {
+    border-color: red;
+    box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+}
+
 .contact-container .success-message {
     margin-top: 1rem;
     color: green;
-    text-align: center;
+    font-size: 1.1rem;
     font-weight: bold;
+    padding: 0.5rem;
+    background-color: #e8f5e9;
+    border: 1px solid green;
+    border-radius: 4px;
+    text-align: center;
 }
 
 .contact-container button {
@@ -43,6 +58,14 @@
 .contact-container button:hover {
     background-color: #1a237e;
 }
+
+.contact-container button:focus {
+    outline: 2px solid #1a237e;
+    outline-offset: 2px;
+    background-color: #303f9f;
+}
+
+/* Responsividade */
 
 @media (max-width: 768px) {
     .contact-container {
@@ -62,5 +85,13 @@
     .contact-container button {
         width: 100%;
         text-align: center;
+    }
+
+    .contact-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .contact-container .success-message {
+        font-size: 1rem;
     }
 }
