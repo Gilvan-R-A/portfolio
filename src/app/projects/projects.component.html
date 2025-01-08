@@ -12,6 +12,11 @@
     <div class="project-list">
         <div class="project-card" *ngFor="let project of filteredProjects" 
         [hidden]="selectedTech && !project.technologies.includes(selectedTech)">
+
+        <div class="image-container" *ngIf="project.image">
+            <img [src]="project.image" [alt]="project.name">
+        </div>
+
         <h3>{{ project.name }}</h3>
         <p>{{ project.description }}</p>
         <small>Tecnologias: {{ project.technologies.join(', ')}}</small>
@@ -22,3 +27,4 @@
         </div>
     </div>
 </div>
+

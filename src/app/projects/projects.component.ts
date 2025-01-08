@@ -32,6 +32,7 @@ export class ProjectsComponent {
       technologies: ['C#', 'Entity Framework'],
       github: 'https://github.com/gilvan/tarefas-api',
       live: null,
+      image: 'assets/img/api.webp',
     },
     {
       name: 'E-commerce Frontend',
@@ -39,6 +40,7 @@ export class ProjectsComponent {
       technologies: ['Angular', 'SCSS'],
       github: 'https://github.com/gilvan/ecommerce-frontend',
       live: 'https://ecommerce.com', 
+      image: 'assets/img/ecommerce.jpg'
     },
     {
       name: 'Sistema de Leitura de Consumo',
@@ -46,6 +48,7 @@ export class ProjectsComponent {
       technologies: ['Node.js', 'Express'],
       github: 'https://github.com/gilvan/consumo-api',
       live: null,
+      image: 'assets/img/consumo.jpg',
     }
   ];
 
@@ -57,3 +60,4 @@ export class ProjectsComponent {
     );
   }
 }
+
