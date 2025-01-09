@@ -2,21 +2,21 @@
     margin: 2rem auto;
     padding: 1.5rem;
     max-width: 800px;
-    background-color: #f9f9f9;
+    background-color: var(--about-bg-color);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px var(--about-box-shadow);
     text-align: center;
 }
 
 .about-container h2, .about-container h3 {
     margin-bottom: 1rem;
-    color: #3f51b5;
+    color: var(--about-heading-color);
     font-weight: bold;
 }
 
 .about-container p {
     margin-bottom: 2rem;
-    color: #333;
+    color: var(--about-paragraph-color);
     line-height: 1.6;
 }
 
@@ -24,7 +24,7 @@
     list-style: none;
     padding: 0;
     margin: 0 0 2rem 0;
-    border-left: 2px solid #3f51b5;
+    border-left: 2px solid var(--about-timeline-border-color);
 }
 
 .timeline li {
@@ -40,13 +40,13 @@
     top: 0.5rem;
     width: 10px;
     height: 10px;
-    background-color: #3f51b5;
+    background-color: var(--about-timeline-marker-color);
     border-radius: 50%;
     transition: transform 0.2s, background-color 0.2s;
 }
 
 .timeline li:hover::before {
-    background-color: #1a237e;
+    background-color: var(--about-timeline-marker-hover-color);
     transform: scale(1.2);
 }
 
@@ -60,17 +60,17 @@
 
 .skills mat-icon {
     margin-right: 0.5rem;
-    color: #3f51b5;
+    color: var(--about-skills-icon-color);
     font-size: 1.5rem;
     transition: transform 0.2s, color 0.2s;
 }
 
 .skills mat-icon:hover, .skills mat-icon:focus {
-    color: #1a237e;
+    color: var((--about-skills-icon-hover-color));
     transform: scale(1.1);
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .about-container {
         margin: 1rem;

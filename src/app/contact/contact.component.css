@@ -1,20 +1,27 @@
+html, body {
+    height: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
 .contact-container {
     max-width: 600px;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--contact-border-color);
     border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--contact-bg-color);
+    box-shadow: 0 2px 4px var(--contact-box-shadow);
 }
 
 .contact-container h2 {
     text-align: center;
     margin: 1rem 0 1.5rem 0;
     font-size: 1.8rem;
-    color: #283593;
+    color: var(--contact-heading-color);
 }
 
 .contact-container mat-form-field {
@@ -23,23 +30,23 @@
 }
 
 .contact-container mat-form-field.mat-form-field-appearance-outline.mat-focused {
-    border-color: #3f51b5;
-    box-shadow: 0 0 4px rgba(63, 81, 181, 0.5);
+    border-color: var(--contact-input-focused-border-color);
+    box-shadow: 0 0 4px var(--contact-input-focused-box-shadow);
 }
 
 .contact-container mat-form-field.mat-form-field-invalid {
-    border-color: red;
-    box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+    border-color: var(--contact-input-invalid-border-color);
+    box-shadow: 0 0 4px var(--contact-input-invalid-box-shadow);
 }
 
 .contact-container .success-message {
     margin-top: 1rem;
-    color: green;
+    color: var(--contact-success-message-bg-color);
     font-size: 1.1rem;
     font-weight: bold;
     padding: 0.5rem;
-    background-color: #e8f5e9;
-    border: 1px solid green;
+    background-color: var(--contact-success-message-bg-color);
+    border: 1px solid var(--contact-success-message-border-color);
     border-radius: 4px;
     text-align: center;
 }
@@ -47,8 +54,8 @@
 .contact-container button {
     align-self: flex-end;
     padding: 0.5rem 1rem;
-    background-color: #3f51b5;
-    color: white;
+    background-color: var(--contact-button-bg-color);
+    color: var(--contact-button-text-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -56,16 +63,16 @@
 }
 
 .contact-container button:hover {
-    background-color: #1a237e;
+    background-color: var(--contact-button-hover-bg-color);
 }
 
 .contact-container button:focus {
-    outline: 2px solid #1a237e;
+    outline: 2px solid var(--contact-button-focus-outline-color);
     outline-offset: 2px;
-    background-color: #303f9f;
+    background-color: var(--contact-button-focus-bg-color);
 }
 
-/* Responsividade */
+
 
 @media (max-width: 768px) {
     .contact-container {

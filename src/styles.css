@@ -1,12 +1,214 @@
+:root {
+    /* Tema claro */
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --button-bg-color: #3f51b5;
+    --button-hover-bg-color: #1a237e;
+    --button-focus-outline: #1a237e;
+    --input-border-focus: #3f51b5;
+    --input-shadow-focus: rgba(63, 81, 181, 0.5);
+    --success-color: green;
+    --error-color: red;
+
+
+    /* Cores de navegação */
+    --nav-bg-color: #3f51b5;
+    --logo-color: #ffffff;
+    --logo-hover-color: #1a237e;
+    --nav-link-color: #ffffff;
+    --nav-link-active-color: #1a237e;
+    --hamburguer-color: #ffffff;
+    --hamburguer-hover-color: #1a237e;
+    --nav-mobile-bg-color: #3f51b5;
+
+    /* Cores do rodapé */
+    --footer-bg-color: #3f51b5;
+    --footer-text-color: #ffffff;
+    --footer-heading-color: #1a237e;
+    --footer-link-color: #ffffff;
+    --footer-link-hover-color: #1a237e;
+    --footer-social-icon-color: #1a237e;
+    --footer-bottom-color: #ffffff;
+
+    /* Cores do componente Home - Tema Claro */
+    --home-bg-color: #f9f9f9;
+    --home-intro-heading-color: #3f51b5;
+    --home-intro-paragraph-color: #333;
+    --home-profile-link-text-color: #ffffff;
+    --home-profile-link-bg-color: #3f51b5;
+    --home-profile-link-hover-bg-color: #1a237e;
+    --home-profile-link-focus-color: #1a237e;
+
+    /* Cores do componente About - Tema Claro */
+    --about-bg-color: #f9f9f9;
+    --about-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --about-heading-color: #3f51b5;
+    --about-paragraph-color: #333;
+    --about-timeline-border-color: #3f51b5;
+    --about-timeline-marker-color: #3f51b5;
+    --about-timeline-marker-hover-color: #1a237e;
+    --about-skills-icon-color: #3f51b5;
+    --about-skills-icon-hover-color: #1a237e;
+
+    /* Cores do componente Projects - Tema Claro */
+    --projects-heading-color: #3f51b5;
+    --projects-card-border-color: #ddd;
+    --projects-card-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --projects-card-hover-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    --projects-card-bg-color: #fff;
+    --projects-image-bg-color: #f4f4f4;
+    --projects-card-title-color: #333;
+    --projects-card-text-color: #444;
+    --projects-card-meta-color: #777;
+    --projects-link-bg-color: #3f51b5;
+    --projects-link-text-color: #fff;
+    --projects-link-hover-bg-color: #1a237e;
+    --projects-link-focus-outline-color: #3f51b5;
+    --projects-card-mobile-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    /* Cores do componente Contact - Tema Claro */
+    --contact-border-color: #ddd;
+    --contact-bg-color: #fff;
+    --contact-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --contact-heading-color: #283593;
+    --contact-input-focused-border-color: #3f51b5;
+    --contact-input-focused-box-shadow: 0 0 4px rgba(63, 81, 181, 0.5);
+    --contact-input-invalid-border-color: red;
+    --contact-input-invalid-box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+    --contact-success-message-color: green;
+    --contact-success-message-bg-color: #e8f5e9;
+    --contact-success-message-border-color: green;
+    --contact-button-bg-color: #3f51b5;
+    --contact-button-text-color: white;
+    --contact-button-hover-bg-color: #1a237e;
+    --contact-button-focus-outline-color: #1a237e;
+    --contact-button-focus-bg-color: #303f9f;
+
+
+    --theme-toggle-bg-color: #3f51b5;
+    --theme-toggle-text-color: #fff;
+    --theme-toggle-hover-bg-color: #1a237e;
+    --theme-toggle-border-color: transparent;
+
+
+
+}
+
+.dark-theme {
+    /* Tema escuro */
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --button-bg-color: #3949ab;
+    --button-hover-bg-color: #283593;
+    --button-focus-outline: #283593;
+    --input-border-focus: #3949ab;
+    --input-shadow-focus: rgba(57, 73, 171, 0.5);
+    --success-color: lightgreen;
+    --error-color: lightcoral;
+
+    /* Cores de navegação (tema escuro) */
+    --nav-bg-color: #212121;
+    --logo-color: #f5f5f5;
+    --logo-hover-color: #bb86fc;
+    --nav-link-color: #f5f5f5;
+    --nav-link-active-color: #bb86fc;
+    --hamburguer-color: #f5f5f5;
+    --hamburguer-hover-color: #bb86fc;
+    --nav-mobile-bg-color: #212121;
+
+    /* Cores do rodapé (tema escuro) */
+    --footer-bg-color: #212121;
+    --footer-text-color: #f5f5f5;
+    --footer-heading-color: #bb86fc;
+    --footer-link-color: #f5f5f5;
+    --footer-link-hover-color: #bb86fc;
+    --footer-social-icon-color: #bb86fc;
+    --footer-bottom-color: #f5f5f5;
+
+    /* Cores do componente Home - Tema Escuro */
+    --home-bg-color: #121212;
+    --home-intro-heading-color: #bb86fc;
+    --home-intro-paragraph-color: #e0e0e0;
+    --home-profile-link-text-color: #ffffff;
+    --home-profile-link-bg-color: #bb86fc;
+    --home-profile-link-hover-bg-color: #3700b3;
+    --home-profile-link-focus-color: #3700b3;
+
+    /* Cores do componente About - Tema Escuro */
+    --about-bg-color: #121212;
+    --about-box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    --about-heading-color: #bb86fc;
+    --about-paragraph-color: #e0e0e0;
+    --about-timeline-border-color: #bb86fc;
+    --about-timeline-marker-color: #bb86fc;
+    --about-timeline-marker-hover-color: #3700b3;
+    --about-skills-icon-color: #bb86fc;
+    --about-skills-icon-hover-color: #3700b3;
+
+    /* Cores do componente Projects - Tema Escuro */
+    --projects-heading-color: #bb86fc;
+    --projects-card-border-color: #444;
+    --projects-card-box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    --projects-card-hover-box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    --projects-card-bg-color: #1e1e1e;
+    --projects-image-bg-color: #2c2c2c;
+    --projects-card-title-color: #e0e0e0;
+    --projects-card-text-color: #cfcfcf;
+    --projects-card-meta-color: #b3b3b3;
+    --projects-link-bg-color: #bb86fc;
+    --projects-link-text-color: #121212;
+    --projects-link-hover-bg-color: #3700b3;
+    --projects-link-focus-outline-color: #bb86fc;
+    --projects-card-mobile-box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+
+    /* Cores do componente Contact - Tema Escuro */
+    --contact-border-color: #444;
+    --contact-bg-color: #1e1e1e;
+    --contact-box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    --contact-heading-color: #bb86fc;
+    --contact-input-focused-border-color: #bb86fc;
+    --contact-input-focused-box-shadow: 0 0 4px rgba(187, 134, 252, 0.5);
+    --contact-input-invalid-border-color: #cf6679;
+    --contact-input-invalid-box-shadow: 0 0 4px rgba(207, 102, 121, 0.5);
+    --contact-success-message-color: #03dac6;
+    --contact-success-message-bg-color: #00312e;
+    --contact-success-message-border-color: #03dac6;
+    --contact-button-bg-color: #bb86fc;
+    --contact-button-text-color: #121212;
+    --contact-button-hover-bg-color: #3700b3;
+    --contact-button-focus-outline-color: #bb86fc;
+    --contact-button-focus-bg-color: #6200ea;
+
+    --theme-toggle-bg-color: #6200ea;
+    --theme-toggle-text-color: #fff;
+    --theme-toggle-hover-bg-color: #3700b3;
+    --theme-toggle-border-color: #bb86fc;
+
+
+}
+
 /* Estilos Globais */
+
 html, body {
     height: 100%;
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--background-color);
+    /* background-size: cover; */
+    color: var(--text-color);
     line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    z-index: -1;
 }
 
 .container {
@@ -14,7 +216,10 @@ html, body {
     max-width: 1200px;
 }
 
+
+
 /* Tipografia Global */
+
 h1, h2, h3 {
     margin-bottom: 1rem;
     line-height: 1.3;
@@ -25,6 +230,7 @@ p {
 }
 
 /* Imagens */
+
 img {
     max-width: 100%;
     height: auto;
@@ -33,6 +239,7 @@ img {
 }
 
 /* Listas */
+
 ul, ol {
     padding-left: 1.5rem;
     margin: 1rem 0;
@@ -43,6 +250,7 @@ li {
 }
 
 /* Botões Globais */
+
 button {
     display: block;
     width: 100%;
@@ -51,7 +259,7 @@ button {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
     color: white;
-    background-color: #3f51b5;
+    background-color: var(--button-bg-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -59,16 +267,18 @@ button {
 }
 
 button:hover {
-    background-color: #1a237e;
+    background-color: var(--button-hover-bg-color);
     transform: translateY(-2px);
 }
 
 button:focus-visible {
-    outline: 2px solid #1a237e;
+    outline: 2px solid var(--button-focus-outline);
     outline-offset: 2px;
 }
 
+
 /* Formulários Globais */
+
 form {
     display: flex;
     flex-direction: column;
@@ -85,20 +295,21 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #3f51b5;
+    border-color: var(--input-border-focus);
     outline: none;
-    box-shadow: 0 0 4px rgba(63, 81, 181, 0.5);
+    box-shadow: 0 0 4px var(--input-shadow-focus);
 }
 
 .success-message {
-    color: green;
+    color: var(--success-color);
 }
 
 .error-message {
-    color: red;
+    color: var(--error-color);
 }
 
 /* Responsividade */
+
 @media (max-width: 768px) {
     .container {
         width: 95%;
