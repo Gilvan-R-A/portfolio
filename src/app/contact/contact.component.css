@@ -41,7 +41,7 @@ html, body {
 
 .contact-container .success-message {
     margin-top: 1rem;
-    color: var(--contact-success-message-bg-color);
+    color: var(--contact-success-message-color);
     font-size: 1.1rem;
     font-weight: bold;
     padding: 0.5rem;
