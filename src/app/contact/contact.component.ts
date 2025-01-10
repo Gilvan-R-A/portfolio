@@ -30,6 +30,7 @@ export class ContactComponent {
   private serviceID = 'service_ji2f9ka';
   private templateID = 'template_7m7e508';
   private userID = 'H2fz7Frr3bd3vL4Gh';
+  private thankYouTemplateID = 'template_v4gz5km';
 
   constructor(private fb: FormBuilder){
     this.contactForm = this.fb.group({
@@ -40,24 +41,43 @@ export class ContactComponent {
   }
 
   sendEmail(): void {
-    if (this.contactForm.valid){
+    if (this.contactForm.valid) {
       const { name, email, message } = this.contactForm.value;
-
+  
+   
       emailjs
         .send(
           this.serviceID,
           this.templateID,
-          { name, email, message },
+          { 
+            name,
+            email,
+            message
+          },
           this.userID
         )
         .then(() => {
-          this.successMessage = 'Mensagem enviada com sucesso!';
+         
+          return emailjs.send(
+            this.serviceID,
+            this.thankYouTemplateID,
+            { 
+              name, 
+              email, 
+              reply_to: email 
+            },
+            this.userID
+          );
+        })
+        .then(() => {
+          this.successMessage = 'Mensagem enviada com sucesso! Um e-mail de confirmação foi enviado ao remetente.';
           this.contactForm.reset();
         })
         .catch((error) => {
-          console.error('Erro ao enviar email:', error);
+          console.error('Erro ao enviar e-mail:', error);
           this.successMessage = 'Ocorreu um erro ao enviar a mensagem.';
-        })
+        });
     }
-  }  
+  }
+
 }
