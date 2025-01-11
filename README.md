@@ -121,7 +121,7 @@ ng serve
 
 5. Acesse o portfólio:   
 
-O portfólio estará disponível em http://localhost:3000
+O portfólio estará disponível em http://localhost:4200
 
 
 ## Funcionalidades de Personalização   
