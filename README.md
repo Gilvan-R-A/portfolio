@@ -98,23 +98,28 @@ portfolio/
 1. Clone o repositório:   
 
 ```   
-git clone https://github.com/Gilvan-R-A/portfolio.git
-cd portfolio
+git clone https://github.com/Gilvan-R-A/portfolio
+```  
+
+2. Navegue até a pasta do projeto:   
+
+```   
+cd portfolio   
 ```   
 
-2. Instale as dependências:   
+3. Instale as dependências:   
 
 ```   
 npm install
 ```   
 
-3. Inicie o servidor de desenvolvimento:   
+4. Inicie o servidor de desenvolvimento:   
 
 ```   
 ng serve
 ```   
 
-4. Acesse o portfólio:   
+5. Acesse o portfólio:   
 
 O portfólio estará disponível em http://localhost:3000
 
