@@ -145,10 +145,20 @@ footer {
     color: var(--footer-link-hover-color);
 }
 
+.footer-socials .social-icons i {
+    font-size: 2.1rem;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.footer-socials .social-icons i:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
 .footer-socials .social-icons {
     display: flex;
-    gap: 1rem;
-    margin-top: 0.5rem;
+    gap: 2rem;
+    margin-top: 1.3rem;
 }
 
 .footer-socials .social-icons a {
