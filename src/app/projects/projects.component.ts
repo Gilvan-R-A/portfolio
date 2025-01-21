@@ -23,9 +23,17 @@ import { MatSelectModule } from '@angular/material/select';
 export class ProjectsComponent {
   selectedTech: string | null = null;
 
-  technologies = ['JavaScript', 'Node.js', 'Java', 'Spring Boot'];
+  technologies = ['Angular','JavaScript', 'Node.js', 'Java', 'Spring Boot'];
 
   projects = [
+    {
+      name: 'Portfólio',
+      description: 'Portfólio profissional desenvolvido em Angular.',
+      technologies: ['Angular', 'EmailJS'],
+      github: 'https://github.com/Gilvan-R-A/portfolio',
+      live: null,
+      image: 'assets/img/projects/portfolio.png',
+    },
     {
       name: 'API de Gestão de Pessoas',
       description: 'Uma API desenvolvida com Java e Spring Boot.',
