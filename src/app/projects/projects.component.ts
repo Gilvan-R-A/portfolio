@@ -23,7 +23,7 @@ import { MatSelectModule } from '@angular/material/select';
 export class ProjectsComponent {
   selectedTech: string | null = null;
 
-  technologies = ['Angular','JavaScript', 'Node.js', 'Java', 'Spring Boot'];
+  technologies = ['Angular','JavaScript', 'PHP','Node.js', 'Java', 'Spring Boot'];
 
   projects = [
     {
@@ -49,6 +49,14 @@ export class ProjectsComponent {
       github: 'https://github.com/Gilvan-R-A/top-magazine-website',
       live: null, 
       image: 'assets/img/projects/ecommerce.jpg'
+    },
+    {
+      name: 'Sistema de Gerenciamento de Reservas para Hotéis',
+      description: 'Sistema de reservas desenvolvido em PHP e JavaScript',
+      technologies: ['PHP', 'JavaScript', 'FullCalendar.js', 'SweetAlert2', 'MySQL'],
+      github: 'https://github.com/Gilvan-R-A/hotel-reservation-app',
+      live: null,
+      image: 'assets/img/projects/hotelReservations.png',
     },
     {
       name: 'API de Notícias',
