@@ -23,9 +23,25 @@ import { MatSelectModule } from '@angular/material/select';
 export class ProjectsComponent {
   selectedTech: string | null = null;
 
-  technologies = ['Angular','JavaScript', 'PHP','Node.js', 'Java', 'Spring Boot'];
+  technologies = ['Angular', 'React', 'TypeScript','JavaScript', 'PHP','Node.js', 'Java', 'Spring Boot'];
 
   projects = [
+    {
+      name: 'Sistema de Gerenciamento de Reservas para Hotéis',
+      description: 'Sistema de reservas desenvolvido em PHP e JavaScript',
+      technologies: ['PHP', 'JavaScript', 'FullCalendar.js', 'SweetAlert2', 'MySQL'],
+      github: 'https://github.com/Gilvan-R-A/hotel-reservation-app',
+      live: null,
+      image: 'assets/img/projects/hotelReservations.png',
+    },
+    {
+      name: 'Streaming de Filmes',
+      description: 'Streaming de Filmes desenvolvido em React',
+      technologies: ['React', 'TypeScript'],
+      github: 'https://github.com/Gilvan-R-A/movie-streaming-app',
+      live: 'https://movie-streaming-app-mu.vercel.app/',
+      image: 'assets/img/projects/movieApp.png',
+    },
     {
       name: 'Portfólio',
       description: 'Portfólio profissional desenvolvido em Angular.',
@@ -43,28 +59,20 @@ export class ProjectsComponent {
       image: 'assets/img/projects/ApiGestaoPessoas.webp',
     },
     {
-      name: 'E-commerce Frontend',
-      description: 'Frontend de um site de vendas usando JavaScript.',
-      technologies: ['JavaScript', 'Vite', 'HTML', 'Tailwind CSS'],
-      github: 'https://github.com/Gilvan-R-A/top-magazine-website',
-      live: null, 
-      image: 'assets/img/projects/ecommerce.jpg'
-    },
-    {
-      name: 'Sistema de Gerenciamento de Reservas para Hotéis',
-      description: 'Sistema de reservas desenvolvido em PHP e JavaScript',
-      technologies: ['PHP', 'JavaScript', 'FullCalendar.js', 'SweetAlert2', 'MySQL'],
-      github: 'https://github.com/Gilvan-R-A/hotel-reservation-app',
-      live: null,
-      image: 'assets/img/projects/hotelReservations.png',
-    },
-    {
       name: 'API de Notícias',
       description: 'API criada em Node.js e Express',
       technologies: ['Node.js', 'Express', 'body-parser', 'cors', 'PostgreSQL'],
       github: 'https://github.com/Gilvan-R-A/news-api',
       live: null,
       image: 'assets/img/projects/ApiNoticias.webp',
+    },
+    {
+      name: 'E-commerce Frontend',
+      description: 'Frontend de um site de vendas usando JavaScript.',
+      technologies: ['JavaScript', 'Vite', 'HTML', 'Tailwind CSS'],
+      github: 'https://github.com/Gilvan-R-A/top-magazine-website',
+      live: null, 
+      image: 'assets/img/projects/ecommerce.jpg'
     },
     {
       name: 'Site de Notícias',
