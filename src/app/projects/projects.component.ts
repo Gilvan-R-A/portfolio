@@ -21,9 +21,9 @@ import { MatSelectModule } from '@angular/material/select';
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
-  selectedTech: string | null = null;
+  selectedTech: string = '';
 
-  technologies = ['Angular', 'React', 'TypeScript','JavaScript', 'PHP','Node.js', 'Java', 'Spring Boot'];
+  technologies = ['Angular', 'React', 'PHP', 'Java', 'Node.js', 'TypeScript','JavaScript', 'Spring Boot'];
 
   projects = [
     {
@@ -45,7 +45,7 @@ export class ProjectsComponent {
     {
       name: 'Portfólio',
       description: 'Portfólio profissional desenvolvido em Angular.',
-      technologies: ['Angular', 'EmailJS'],
+      technologies: ['Angular', 'TypeScript', 'EmailJS'],
       github: 'https://github.com/Gilvan-R-A/portfolio',
       live: null,
       image: 'assets/img/projects/portfolio.png',
@@ -117,11 +117,11 @@ export class ProjectsComponent {
   ];
 
   get filteredProjects(){
-    return this.projects.filter((project) => 
-    this.selectedTech 
-      ? project.technologies.includes(this.selectedTech)
-      : true
-    );
+    return this.selectedTech 
+    ? this.projects.filter(project => 
+      project.technologies.includes(this.selectedTech!)
+    )
+    : this.projects;
   }
 }
 
