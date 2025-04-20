@@ -31,7 +31,7 @@ export class ProjectsComponent {
       description: 'Sistema de reservas desenvolvido em PHP e JavaScript',
       technologies: ['PHP', 'JavaScript', 'FullCalendar.js', 'SweetAlert2', 'MySQL'],
       github: 'https://github.com/Gilvan-R-A/hotel-reservation-app',
-      live: null,
+      live: 'https://hotel-reservation-frontend-zxic.onrender.com',
       image: 'assets/img/projects/hotelReservations.png',
     },
     {
