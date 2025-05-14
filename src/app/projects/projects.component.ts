@@ -71,7 +71,7 @@ export class ProjectsComponent {
       description: 'Frontend de um site de vendas usando JavaScript.',
       technologies: ['JavaScript', 'Vite', 'HTML', 'Tailwind CSS'],
       github: 'https://github.com/Gilvan-R-A/top-magazine-website',
-      live: null, 
+      live: 'https://gilvan-r-a.github.io/top-magazine-website/', 
       image: 'assets/img/projects/ecommerce.jpg'
     },
     {
