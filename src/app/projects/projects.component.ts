@@ -87,7 +87,7 @@ export class ProjectsComponent {
       description: 'API criada em Java e Spring Boot.',
       technologies: ['Java', 'Spring Boot', 'HTML', 'CSS', 'Bootstrap', 'JQuery', 'PostgreSQL'],
       github: 'https://github.com/Gilvan-R-A/product-api',
-      live: null, 
+      live: 'https://product-api-q657.onrender.com', 
       image: 'assets/img/projects/ApiProdutos.jpg'
     }, 
     {
