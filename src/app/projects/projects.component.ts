@@ -47,7 +47,7 @@ export class ProjectsComponent {
       description: 'Portfólio profissional desenvolvido em Angular.',
       technologies: ['Angular', 'TypeScript', 'EmailJS'],
       github: 'https://github.com/Gilvan-R-A/portfolio',
-      live: null,
+      live: 'https://gilvan-r-a.github.io/portfolio/',
       image: 'assets/img/projects/portfolio.png',
     },
     {
