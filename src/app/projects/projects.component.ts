@@ -89,30 +89,6 @@ export class ProjectsComponent {
       github: 'https://github.com/Gilvan-R-A/product-api',
       live: 'https://product-api-q657.onrender.com', 
       image: 'assets/img/projects/ApiProdutos.jpg'
-    }, 
-    {
-      name: 'Jogo da Memória',
-      description: 'Jogo do Super Mário desenvolvido em JavaScript.',
-      technologies: ['JavaScript', 'HTML', 'CSS'],
-      github: 'https://github.com/Gilvan-R-A/super-mario-memory-game-app',
-      live: 'https://gilvan-r-a.github.io/super-mario-memory-game-app/', 
-      image: 'assets/img/projects/JogoSuperMario.jpg'
-    }, 
-    {
-      name: 'API de Gerenciamento de Estoques de Cerveja',
-      description: 'API desenvolvida em Java e Spring Boot.',
-      technologies: ['Java', 'Spring Boot', 'Lombok', 'MapStruct', 'H2 Database', 'Swagger'],
-      github: 'https://github.com/Gilvan-R-A/beer-inventory-management-api',
-      live: null, 
-      image: 'assets/img/projects/ApiCervejas.webp'
-    }, 
-    {
-      name: 'Banco Digital',
-      description: 'Sistema bancário simples desenvolvido em Java.',
-      technologies: ['Java'],
-      github: 'https://github.com/Gilvan-R-A/digital-bank-app',
-      live: null, 
-      image: 'assets/img/projects/BancoDigital.jpg'
     }
   ];
 
