@@ -63,7 +63,7 @@ export class ProjectsComponent {
       description: 'API criada em Node.js e Express',
       technologies: ['Node.js', 'Express', 'JWT', 'body-parser', 'cors', 'PostgreSQL', 'SQLite'],
       github: 'https://github.com/Gilvan-R-A/news-api',
-      live: 'https://news-api-u1bc.onrender.com/postagem',
+      live: 'https://news-api-u1bc.onrender.com/postagens',
       image: 'assets/img/projects/ApiNoticias.webp',
     },
     {
