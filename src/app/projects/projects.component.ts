@@ -23,13 +23,13 @@ import { MatSelectModule } from '@angular/material/select';
 export class ProjectsComponent {
   selectedTech: string = '';
 
-  technologies = ['Angular', 'React', 'PHP', 'Java', 'Node.js', 'TypeScript','JavaScript', 'Spring Boot'];
+  technologies = ['Angular', 'React', 'PHP', 'Java', 'Node.js', 'TypeScript','JavaScript', 'Spring Boot', 'Docker'];
 
   projects = [
     {
       name: 'Sistema de Gerenciamento de Reservas para Hotéis',
       description: 'Sistema de reservas desenvolvido em PHP e JavaScript',
-      technologies: ['PHP', 'JavaScript', 'FullCalendar.js', 'SweetAlert2', 'MySQL'],
+      technologies: ['PHP', 'JavaScript', 'FullCalendar.js', 'SweetAlert2', 'MySQL', 'Docker'],
       github: 'https://github.com/Gilvan-R-A/hotel-reservation-app',
       live: 'https://hotel-reservation-frontend-zxic.onrender.com',
       image: 'assets/img/projects/hotelReservations.png',
@@ -37,7 +37,7 @@ export class ProjectsComponent {
     {
       name: 'Streaming de Filmes',
       description: 'Streaming de Filmes desenvolvido em React',
-      technologies: ['React', 'TypeScript'],
+      technologies: ['React', 'TypeScript', 'Docker'],
       github: 'https://github.com/Gilvan-R-A/movie-streaming-app',
       live: 'https://movie-streaming-app-mu.vercel.app/',
       image: 'assets/img/projects/movieApp.png',
