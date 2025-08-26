@@ -35,6 +35,9 @@ portfolio/
 │   ├── main.ts                 # Arquivo de inicialização do Angular
 │   └── styles.css              # Arquivo de estilos globais
 ├── package.json                # Gerenciamento de pacotes e scripts
+├── Dockerfile                  # Configurações Docker
+├── docker-compose.yml          # Configurações Docker Compose
+├── nginx.conf                  # Configurações do servidor Nginx
 
 ```   
 
@@ -52,7 +55,7 @@ portfolio/
 - Linha do tempo interativa destacando marcos importantes da minha formação.   
 - Seção de habilidades técnicas, destacando minhas competências em diferentes áreas de desenvolvimento.   
 
-**Projetos (Projects)**   
+**3. Projetos (Projects)**   
 
 - **Exibição de Projetos:** Cada projeto apresenta informações como:   
 
@@ -91,10 +94,8 @@ portfolio/
    - GitHub (para armazenamento de projetos)
    - Vite (ferramenta de build)   
 
-**Instalação e Execução**   
-
-**Passos para Execução Local:**   
-
+## Instalação e Execução Tradicional (Angular CLI)  
+  
 1. Clone o repositório:   
 
 ```   
@@ -121,7 +122,20 @@ ng serve
 
 5. Acesse o portfólio:   
 
-O portfólio estará disponível em http://localhost:4200
+O portfólio estará disponível em http://localhost:4200   
+
+## Execução com Docker   
+
+Agora também é possível executar o portfólio em um **container Docker.**   
+
+1. Certifique-se de ter o Docker e Docker Compose instalados.   
+2. Na raiz do projeto, execute:   
+
+```   
+docker-compose up --build
+```   
+
+3. Acesse o navegador: http://localhost:8080
 
 
 ## Funcionalidades de Personalização   
