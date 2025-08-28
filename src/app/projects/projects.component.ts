@@ -53,7 +53,7 @@ export class ProjectsComponent {
     {
       name: 'API de Gestão de Pessoas',
       description: 'Uma API desenvolvida com Java e Spring Boot.',
-      technologies: ['Java', 'Spring Boot', 'JPA', 'Lombok', 'MapStruct', 'H2 Database'],
+      technologies: ['Java', 'Spring Boot', 'JPA', 'Lombok', 'MapStruct', 'H2 Database', 'Docker'],
       github: 'https://github.com/Gilvan-R-A/people-management-api',
       live: 'https://personapi-z7p3.onrender.com/api/v1/people',
       image: 'assets/img/projects/ApiGestaoPessoas.webp',
