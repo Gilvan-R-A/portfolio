@@ -61,7 +61,7 @@ export class ProjectsComponent {
     {
       name: 'API de Notícias',
       description: 'API criada em Node.js e Express',
-      technologies: ['Node.js', 'Express', 'JWT', 'body-parser', 'cors', 'PostgreSQL', 'SQLite'],
+      technologies: ['Node.js', 'Express', 'JWT', 'body-parser', 'cors', 'PostgreSQL', 'SQLite', 'Docker'],
       github: 'https://github.com/Gilvan-R-A/news-api',
       live: 'https://news-api-u1bc.onrender.com/postagens',
       image: 'assets/img/projects/ApiNoticias.webp',
