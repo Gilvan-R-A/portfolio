@@ -76,8 +76,8 @@ export class ProjectsComponent {
     },
     {
       name: 'Site de Notícias',
-      description: 'Página de notícias desenvolvida em JavaScript.',
-      technologies: ['JavaScript', 'Fetch API', 'HTML', 'CSS', 'SweetAlert2'],
+      description: 'Página de notícias desenvolvida em Angular.',
+      technologies: ['Angular', 'TypeScript', 'SCSS'],
       github: 'https://github.com/Gilvan-R-A/news-website',
       live: 'https://gilvan-r-a.github.io/news-website/', 
       image: 'assets/img/projects/SiteNoticias.png'
